@@ -3,6 +3,8 @@ using Entities.Concrete;
 using System.Collections.Generic;
 using DataAccess.Abstract;
 using Entities.DTOs;
+using Core.Utilities.Results;
+using Microsoft.EntityFrameworkCore.Query.Internal;
 
 namespace Business.Concrete
 {
@@ -15,10 +17,12 @@ namespace Business.Concrete
             _productDal = productDal;
         }
 
-        public void Add(Product product)
+        public IResult Add(Product product)
         {
             //business codes - iş kodları
             _productDal.Add(product);
+
+            return new Result(true);
         }
 
         public List<Product> GetAll()
