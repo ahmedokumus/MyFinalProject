@@ -8,6 +8,8 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
+            //Data Transformation Object
+            //IoC
             CategoryTest();
             ProductTest();
         }
