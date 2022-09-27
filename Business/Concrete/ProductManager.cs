@@ -3,6 +3,8 @@ using Business.Abstract;
 using Entities.Concrete;
 using System.Collections.Generic;
 using Business.Constants;
+using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Validation;
 using DataAccess.Abstract;
 using Entities.DTOs;
 using Core.Utilities.Results;
@@ -18,14 +20,16 @@ namespace Business.Concrete
             _productDal = productDal;
         }
 
+        //AOP
+        //[LogAspect] --> 
+        //[Validate]// --> Ürün eklenecek kuralları doğrula demek
+        //[Transaction] --> Hata olursa geri al
+        //[Performance] --> Örneğin çalışma 5 saniyeyi geçerse beni uyar
+
+        [ValidationAspect(typeof(ProductValidator))]//validation codes - doğrulama kodları
         public IResult Add(Product product)
         {
             //business codes - iş kodları
-
-            if (product.ProductName.Length < 2)
-            {
-                return new ErrorResult(Messages.ProductNameInvalid);
-            }
 
             _productDal.Add(product);
 
@@ -34,10 +38,7 @@ namespace Business.Concrete
 
         public IDataResult<List<Product>> GetAll()
         {
-            //İş kodları
-            //Yetkisi var mı?
-
-            if (DateTime.Now.Hour == 19)
+            if (DateTime.Now.Hour == 1)
             {
                 return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime);
             }

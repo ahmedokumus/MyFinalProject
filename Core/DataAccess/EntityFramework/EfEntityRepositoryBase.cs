@@ -16,7 +16,7 @@ namespace Core.DataAccess.EntityFramework
             using (TContext context = new TContext())
             {
                 return filter == null
-                    ? context.Set<TEntity>().ToList() //filtre null ise çalışır.
+                    ? context.Set<TEntity>().ToList()                //filtre null ise çalışır.
                     : context.Set<TEntity>().Where(filter).ToList(); //filtre'yi uygula öyle getir çalışır.
             }
         }
