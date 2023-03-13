@@ -3,17 +3,33 @@ using DataAccess.Concrete.EntityFramework;
 
 namespace ConsoleUI
 {
-    //Abstract => soyut
-    //Concrete => somut
+    //Abstract -> soyut
+    //Concrete -> somut
     //S(O)LID -> Open Closed Principle
+    //DTO -> Data Transformation Objects
     internal class Program
     {
         static void Main(string[] args)
         {
-            ProductManager productManager = new ProductManager(new EfProductDal());
-            foreach (var product in productManager.GetAll())
+            ProductTest();
+            //CategoryTest();
+        }
+
+        private static void CategoryTest()
+        {
+            CategoryManager categoryManager = new CategoryManager(new EfCategoryDal());
+            foreach (var category in categoryManager.GetAll())
             {
-                Console.WriteLine(product.ProductName);
+                Console.WriteLine(category.CategoryName);
+            }
+        }
+
+        private static void ProductTest()
+        {
+            ProductManager productManager = new ProductManager(new EfProductDal());
+            foreach (var product in productManager.GetProductDetails())
+            {
+                Console.WriteLine("{0} --------- {1}", product.ProductName, product.CategoryName);
             }
         }
     }
