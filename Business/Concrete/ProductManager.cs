@@ -1,11 +1,12 @@
-﻿using System.Transactions;
-using Business.Abstract;
+﻿using Business.Abstract;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
 using Core.Aspects.Autofac.Caching;
+using Core.Aspects.Autofac.Logging;
 using Core.Aspects.Autofac.Performance;
 using Core.Aspects.Autofac.TransactionScopeAspect;
 using Core.Aspects.Autofac.Validation;
+using Core.CrossCuttingConcerns.Logging.Log4Net.Loggers;
 using Core.Utilities.Business;
 using Core.Utilities.Results.Abstract;
 using Core.Utilities.Results.Concrete;
@@ -28,6 +29,8 @@ public class ProductManager : IProductService
 
     [CacheAspect] //key, value
     [PerformanceAspect(1)]//Methodun çalışması 1 saniyeden uzun sürerse beni bilgilendir
+    [LogAspect(typeof(FileLogger))]
+    [LogAspect(typeof(DatabaseLogger))]
     public IDataResult<List<Product>> GetAll()
     {
         //İş Kodları
@@ -36,11 +39,13 @@ public class ProductManager : IProductService
             return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime);
         }
         return new SuccessDataResult<List<Product>>(_productDal.GetAll(), Messages.ProductsListed);
+
     }
 
     [CacheAspect]
     public IDataResult<Product> GetById(int productId)
     {
+        throw new Exception("Hata");
         return new SuccessDataResult<Product>(_productDal.Get(p => p.ProductId == productId));
     }
 
@@ -65,13 +70,10 @@ public class ProductManager : IProductService
 
     //[SecuredOperation("product.add,admin")]
     [ValidationAspect(typeof(ProductValidator))] // validation - doğrulama
+    [LogAspect(typeof(FileLogger))]
+    [LogAspect(typeof(DatabaseLogger))]
     public IResult Add(Product product)
     {
-        //business codes - iş kodları
-
-        //IResult result = BusinessRules.Run(CheckIfProductCountOfCategoryCorrect(product.CategoryId),
-        //    CheckIfProductNameExists(product.ProductName), CheckIfCategoryLimitExceded());
-
         IResult result = BusinessRules.Run(logics: new[]
         {
             CheckIfProductCountOfCategoryCorrect(product.CategoryId),

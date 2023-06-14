@@ -3,7 +3,7 @@ using System.Text.RegularExpressions;
 using Core.Utilities.IoC;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Core.CrossCunttingConcerns.Caching.Microsoft;
+namespace Core.CrossCuttingConcerns.Caching.Microsoft;
 
 public class MemoryCacheManager : ICacheManager
 {

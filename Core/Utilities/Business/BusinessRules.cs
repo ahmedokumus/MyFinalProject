@@ -1,5 +1,4 @@
 ﻿using Core.Utilities.Results.Abstract;
-using Core.Utilities.Results.Concrete;
 
 namespace Core.Utilities.Business;
 

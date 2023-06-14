@@ -1,5 +1,7 @@
 ﻿using Business.Abstract;
 using Business.Constants;
+using Core.Aspects.Autofac.Logging;
+using Core.CrossCuttingConcerns.Logging.Log4Net.Loggers;
 using Core.Entities.Concrete;
 using Core.Utilities.Results.Abstract;
 using Core.Utilities.Results.Concrete;
@@ -20,6 +22,8 @@ public class AuthManager : IAuthService
         _tokenHelper = tokenHelper;
     }
 
+    [LogAspect(typeof(FileLogger))]
+    [LogAspect(typeof(DatabaseLogger))]
     public IDataResult<User> Register(UserForRegisterDto userForRegisterDto, string password)
     {
         byte[] passwordHash, passwordSalt;
@@ -37,6 +41,8 @@ public class AuthManager : IAuthService
         return new SuccessDataResult<User>(user, Messages.UserRegistered);
     }
 
+    [LogAspect(typeof(FileLogger))]
+    [LogAspect(typeof(DatabaseLogger))]
     public IDataResult<User> Login(UserForLoginDto userForLoginDto)
     {
         var userToCheck = _userService.GetByMail(userForLoginDto.Email);

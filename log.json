@@ -1,0 +1,15 @@
+{
+  "Message": {
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
