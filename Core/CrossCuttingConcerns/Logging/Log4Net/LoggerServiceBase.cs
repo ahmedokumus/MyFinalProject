@@ -18,10 +18,8 @@ public class LoggerServiceBase
         log4net.Config.XmlConfigurator.Configure(loggerRepository, xmlDocument["log4net"]);
 
         _log = LogManager.GetLogger(loggerRepository.Name, name);
-
-
     }
-
+    
     public bool IsInfoEnabled => _log.IsInfoEnabled;
     public bool IsDebugEnabled => _log.IsDebugEnabled;
     public bool IsWarnEnabled => _log.IsWarnEnabled;

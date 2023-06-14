@@ -1,5 +1,38 @@
 {
   "Message": {
+    "Date": "06.15.2023 00:19:30",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "06.15.2023 00:19:35",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "15.06.2023 00:20:47",
     "MethodName": "Login",
     "LogParameters": [
       {

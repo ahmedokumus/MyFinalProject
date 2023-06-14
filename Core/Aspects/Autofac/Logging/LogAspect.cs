@@ -40,6 +40,7 @@ public class LogAspect : MethodInterception
 
         var logDetail = new LogDetail
         {
+            Date = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"),
             MethodName = invocation.Method.Name,
             LogParameters = logParameters
         };

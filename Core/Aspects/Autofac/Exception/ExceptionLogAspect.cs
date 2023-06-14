@@ -4,7 +4,7 @@ using Core.CrossCuttingConcerns.Logging;
 using Core.Utilities.Interceptors;
 using Core.Utilities.Messages;
 
-namespace Core.Aspects.Exception;
+namespace Core.Aspects.Autofac.Exception;
 
 public class ExceptionLogAspect : MethodInterception
 {
