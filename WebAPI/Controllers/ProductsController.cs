@@ -17,7 +17,7 @@ namespace WebAPI.Controllers
             _productService = productService;
         }
 
-        [HttpGet("getall")]
+        [HttpGet(template:"getall")]
         public IActionResult GetAll()
         {
             //Dependency chain --

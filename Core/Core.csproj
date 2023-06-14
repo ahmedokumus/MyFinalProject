@@ -7,11 +7,30 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Aspects\Autofac\Caching\" />
+    <Folder Include="CrossCunttingConcerns\Caching\Microsoft\" />
+    <Folder Include="CrossCunttingConcerns\Caching\Redis\" />
+    <Folder Include="CrossCunttingConcerns\Validation\" />
     <Folder Include="DataAccess\EntityFramework\" />
+    <Folder Include="Entities\Concrete\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="DependencyResolvers\" />
+    <Folder Include="Utilities\Interceptors\" />
+    <Folder Include="Utilities\Business\" />
+    <Folder Include="Utilities\IoC\" />
+    <Folder Include="Utilities\Security\Hashing\" />
+    <Folder Include="Utilities\Security\Encryption\" />
+    <Folder Include="Utilities\Security\JWT\" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.3" />
+    <PackageReference Include="Autofac" Version="7.0.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Autofac.Extras.DynamicProxy" Version="6.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.5.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.4" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.31.0" />
   </ItemGroup>
 
 </Project>
