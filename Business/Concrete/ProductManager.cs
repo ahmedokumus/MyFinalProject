@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.BusinessAspects.Autofac;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
 using Core.Aspects.Autofac.Caching;
@@ -18,8 +19,8 @@ namespace Business.Concrete;
 
 public class ProductManager : IProductService
 {
-    private IProductDal _productDal;
-    private ICategoryService _categoryService;
+    private readonly IProductDal _productDal;
+    private readonly ICategoryService _categoryService;
 
     public ProductManager(IProductDal productDal, ICategoryService categoryService)
     {
@@ -27,6 +28,7 @@ public class ProductManager : IProductService
         _categoryService = categoryService;
     }
 
+    [SecuredOperation("product.add,admin")]
     [CacheAspect] //key, value
     [PerformanceAspect(1)]//Methodun çalışması 1 saniyeden uzun sürerse beni bilgilendir
     [LogAspect(typeof(FileLogger))]
@@ -34,7 +36,7 @@ public class ProductManager : IProductService
     public IDataResult<List<Product>> GetAll()
     {
         //İş Kodları
-        if (DateTime.Now.Hour == 12)
+        if (DateTime.Now.Hour == 11)
         {
             return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime);
         }
@@ -43,10 +45,9 @@ public class ProductManager : IProductService
     }
 
     [CacheAspect]
-    public IDataResult<Product> GetById(int productId)
+    public IDataResult<Product?> GetById(int productId)
     {
-        throw new Exception("Hata");
-        return new SuccessDataResult<Product>(_productDal.Get(p => p.ProductId == productId));
+        return new SuccessDataResult<Product?>(_productDal.Get(p => p.ProductId == productId));
     }
 
     public IDataResult<List<Product>> GetAllByCategoryId(int categoryId)
@@ -59,6 +60,7 @@ public class ProductManager : IProductService
         return new SuccessDataResult<List<Product>>(_productDal.GetAll(p => p.UnitPrice >= min && p.UnitPrice <= max));
     }
 
+    [CacheAspect]
     public IDataResult<List<ProductDetailDto>> GetProductDetails()
     {
         if (DateTime.Now.Hour == 1)
@@ -68,7 +70,7 @@ public class ProductManager : IProductService
         return new SuccessDataResult<List<ProductDetailDto>>(_productDal.GetProductDetails());
     }
 
-    //[SecuredOperation("product.add,admin")]
+    [SecuredOperation("product.add,admin")]
     [ValidationAspect(typeof(ProductValidator))] // validation - doğrulama
     [LogAspect(typeof(FileLogger))]
     [LogAspect(typeof(DatabaseLogger))]
@@ -118,21 +120,23 @@ public class ProductManager : IProductService
         }
         Add(product);
 
-        return null;
+        return null!;
     }
+
+    //*****  İŞ KODLARI  *****\\
 
     private IResult CheckIfProductCountOfCategoryCorrect(int categoryId)
     {
         //Select count(*) from products where categoryId=örn 1
         var result = _productDal.GetAll(p => p.CategoryId == categoryId).Count;
-        if (result >= 10)
+        if (result >= 20)
         {
             return new ErrorResult(Messages.ProductCountCategoryError);
         }
         return new SuccessResult();
     }
 
-    private IResult CheckIfProductNameExists(string productName)
+    private IResult CheckIfProductNameExists(string? productName)
     {
         //Any : ilgili sorgu içerisinde şarta uyan data var mı yok mu
         var result = _productDal.GetAll(p => p.ProductName == productName).Any();

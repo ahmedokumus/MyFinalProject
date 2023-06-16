@@ -9,15 +9,15 @@ namespace ConsoleUI
     //DTO -> Data Transformation Objects
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             EfProductTest();
-            //CategoryTest();
+            CategoryTest();
         }
 
         private static void CategoryTest()
         {
-            CategoryManager categoryManager = new CategoryManager(new EfCategoryDal());
+            var categoryManager = new CategoryManager(new EfCategoryDal());
             foreach (var category in categoryManager.GetAll().Data)
             {
                 Console.WriteLine(category.CategoryName);
@@ -26,7 +26,7 @@ namespace ConsoleUI
 
         private static void EfProductTest()
         {
-            ProductManager productManager = new ProductManager(new EfProductDal(), new CategoryManager(new EfCategoryDal()));
+            var productManager = new ProductManager(new EfProductDal(), new CategoryManager(new EfCategoryDal()));
 
             var result = productManager.GetProductDetails();
 

@@ -9,21 +9,20 @@ public class EfProductDal : EfEntityRepositoryBase<Product, NorthwindContext>, I
 {
     public List<ProductDetailDto> GetProductDetails()
     {
-        using (NorthwindContext context = new NorthwindContext())
-        {
-            var result =
-                from product in context.Products
-                join category in context.Categories
-                    on product.CategoryId equals category.CategoryId
-                select new ProductDetailDto
-                {
-                    ProductId = product.ProductId,
-                    ProductName = product.ProductName,
-                    CategoryName = category.CategoryName,
-                    UnitsInStock = product.UnitsInStock
-                };
+        using var context = new NorthwindContext();
+        var result =
+            from product in context.Products
+            join category in context.Categories
+                on product.CategoryId equals category.CategoryId
+            select new ProductDetailDto
+            {
+                ProductId = product.ProductId,
+                ProductName = product.ProductName,
+                CategoryName = category.CategoryName,
+                UnitsInStock = product.UnitsInStock,
+                UnitPrice=product.UnitPrice
+            };
 
-            return result.ToList();
-        }
+        return result.ToList();
     }
 }

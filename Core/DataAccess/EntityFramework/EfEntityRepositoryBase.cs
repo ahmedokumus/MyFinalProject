@@ -8,7 +8,7 @@ public class EfEntityRepositoryBase<TEntity, TContext> : IEntityRepository<TEnti
     where TEntity : class, IEntity, new()
     where TContext : DbContext, new()
 {
-    public List<TEntity> GetAll(Expression<Func<TEntity, bool>> filter = null)
+    public List<TEntity> GetAll(Expression<Func<TEntity, bool>>? filter = null)
     {
         using (TContext context = new TContext())
         {
@@ -18,7 +18,7 @@ public class EfEntityRepositoryBase<TEntity, TContext> : IEntityRepository<TEnti
         }
     }
 
-    public TEntity Get(Expression<Func<TEntity, bool>> filter)
+    public TEntity? Get(Expression<Func<TEntity, bool>> filter)
     {
         using (TContext context = new TContext())
         {

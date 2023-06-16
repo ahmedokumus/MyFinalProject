@@ -11,7 +11,7 @@ public class AspectInterceptorSelector : IInterceptorSelector
     {
         var classAttributes = type.GetCustomAttributes<MethodInterceptionBaseAttribute>
             (true).ToList();
-        var methodAttributes = type.GetMethod(method.Name)
+        var methodAttributes = type.GetMethod(method.Name)!
             .GetCustomAttributes<MethodInterceptionBaseAttribute>(inherit:true);
         classAttributes.AddRange(methodAttributes);
         classAttributes.Add(new ExceptionLogAspect(typeof(FileLogger)));//Bütün methodları loglar

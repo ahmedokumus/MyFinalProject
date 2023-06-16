@@ -8,7 +8,7 @@ namespace Core.Aspects.Autofac.Exception;
 
 public class ExceptionLogAspect : MethodInterception
 {
-    private LoggerServiceBase _loggerServiceBase;
+    private readonly LoggerServiceBase? _loggerServiceBase;
 
     public ExceptionLogAspect(Type loggerService)
     {
@@ -17,16 +17,16 @@ public class ExceptionLogAspect : MethodInterception
             throw new System.Exception(AspectMessages.WrongLoggerType);
         }
 
-        _loggerServiceBase = (LoggerServiceBase)Activator.CreateInstance(loggerService);
+        _loggerServiceBase = (LoggerServiceBase)Activator.CreateInstance(loggerService)!;
     }
     protected override void OnException(IInvocation invocation, System.Exception e)
     {
         LogDetailWithException logDetailWithException = GetLogDetail(invocation);
         logDetailWithException.ExceptionMessage = e.Message;
-        _loggerServiceBase.Error(logDetailWithException);
+        _loggerServiceBase?.Error(logDetailWithException);
     }
 
-    private LogDetailWithException GetLogDetail(IInvocation invocation)
+    private static LogDetailWithException GetLogDetail(IInvocation invocation)
     {
         var logParameters = new List<LogParameter>();
 

@@ -1,9 +1,10 @@
-﻿{
+{
   "$schema": "https://json.schemastore.org/launchsettings.json",
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
+      //"applicationUrl": "http://192.168.1.192", Projeyi ağa açmak - cmd ipconfig yapıp IPv4 Adresi
       "applicationUrl": "http://localhost:27330",
       "sslPort": 44344
     }
@@ -15,6 +16,7 @@
       "launchBrowser": true,
       "launchUrl": "swagger",
       "applicationUrl": "https://localhost:7295;http://localhost:5001",
+      //"applicationUrl": "https://192.168.1.192;http://192.168.1.192", Projeyi ağa açmak 
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

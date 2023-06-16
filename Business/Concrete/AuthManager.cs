@@ -13,8 +13,8 @@ namespace Business.Concrete;
 
 public class AuthManager : IAuthService
 {
-    private IUserService _userService;
-    private ITokenHelper _tokenHelper;
+    private readonly IUserService _userService;
+    private readonly ITokenHelper _tokenHelper;
 
     public AuthManager(IUserService userService, ITokenHelper tokenHelper)
     {
@@ -45,13 +45,13 @@ public class AuthManager : IAuthService
     [LogAspect(typeof(DatabaseLogger))]
     public IDataResult<User> Login(UserForLoginDto userForLoginDto)
     {
-        var userToCheck = _userService.GetByMail(userForLoginDto.Email);
+        var userToCheck = _userService.GetByMail(userForLoginDto.Email!);
         if (userToCheck == null)
         {
             return new ErrorDataResult<User>(Messages.UserNotFound);
         }
 
-        if (!HashingHelper.VerifyPasswordHash(userForLoginDto.Password, userToCheck.PasswordHash, userToCheck.PasswordSalt))
+        if (!HashingHelper.VerifyPasswordHash(userForLoginDto.Password!, userToCheck.PasswordHash!, userToCheck.PasswordSalt!))
         {
             return new ErrorDataResult<User>(Messages.PasswordError);
         }

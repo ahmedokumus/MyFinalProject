@@ -11,7 +11,6 @@
     <Folder Include="CrossCuttingConcerns\Caching\Redis\" />
     <Folder Include="DataAccess\EntityFramework\" />
     <Folder Include="Entities\Concrete\" />
-    <Folder Include="Extensions\" />
     <Folder Include="DependencyResolvers\" />
     <Folder Include="Utilities\Interceptors\" />
     <Folder Include="Utilities\Business\" />

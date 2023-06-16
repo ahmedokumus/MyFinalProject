@@ -7,7 +7,8 @@ public class SigningCredentialsHelper
 {
     public static SigningCredentials CreateSigningCredentials(SecurityKey securityKey)
     {
-        securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("this is my custom Secret key for authnetication, this is my custom Secret key for authnetication"));
+        //securityKey.KeySize = 512;
+        //securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("thisismycustomSecretkeyforauthneticationthisismycustomSecretkeyforauthnetication"));
         return new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha512);
     }
 }

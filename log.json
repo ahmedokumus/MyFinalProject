@@ -46,3 +46,1179 @@
     ]
   }
 }
+{
+  "Message": {
+    "Date": "15.06.2023 00:45:06",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "15.06.2023 00:55:35",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "15.06.2023 10:51:23",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "15.06.2023 12:36:44",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "15.06.2023 12:52:31",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "15.06.2023 13:46:20",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "15.06.2023 13:54:23",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "15.06.2023 15:49:08",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "15.06.2023 16:09:27",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "15.06.2023 16:42:44",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "15.06.2023 17:53:11",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "15.06.2023 18:03:29",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "15.06.2023 19:03:39",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "15.06.2023 19:34:53",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "15.06.2023 20:35:41",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "15.06.2023 21:36:02",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "15.06.2023 22:38:51",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "15.06.2023 23:38:58",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 00:44:00",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 01:48:04",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 12:51:05",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 15:01:27",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 15:21:11",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 16:21:56",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 17:05:29",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "product",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 6,
+          "ProductName": "Ayva",
+          "UnitsInStock": 55,
+          "UnitPrice": 15.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 17:06:23",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "product",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 6,
+          "ProductName": "Ayva",
+          "UnitsInStock": 55,
+          "UnitPrice": 15.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 17:06:37",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "product",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 6,
+          "ProductName": "Ayva2",
+          "UnitsInStock": 55,
+          "UnitPrice": 15.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 17:08:45",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "product",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 6,
+          "ProductName": "Ayva3",
+          "UnitsInStock": 55,
+          "UnitPrice": 14.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 17:09:43",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "product",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 6,
+          "ProductName": "Ayva3",
+          "UnitsInStock": 55,
+          "UnitPrice": 14.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 17:10:04",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "product",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 6,
+          "ProductName": "Ayva3",
+          "UnitsInStock": 55,
+          "UnitPrice": 15.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 17:10:06",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "product",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 6,
+          "ProductName": "Ayva3",
+          "UnitsInStock": 55,
+          "UnitPrice": 15.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 17:10:35",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "product",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 6,
+          "ProductName": "Ayva4",
+          "UnitsInStock": 55,
+          "UnitPrice": 15.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 17:17:30",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "product",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 6,
+          "ProductName": "Ayva5",
+          "UnitsInStock": 55,
+          "UnitPrice": 15.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 17:17:41",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "product",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 6,
+          "ProductName": "Ayva5",
+          "UnitsInStock": 55,
+          "UnitPrice": 15.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 17:20:50",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "product",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 6,
+          "ProductName": "Ayva5",
+          "UnitsInStock": 55,
+          "UnitPrice": 15.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 17:21:19",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "product",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 6,
+          "ProductName": "Ayva5",
+          "UnitsInStock": 55,
+          "UnitPrice": 15.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 17:23:25",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "product",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 1,
+          "ProductName": "Ayva5",
+          "UnitsInStock": 55,
+          "UnitPrice": 15.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 17:23:38",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "product",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 1,
+          "ProductName": "Ayva5",
+          "UnitsInStock": 55,
+          "UnitPrice": 15.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 17:23:39",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "product",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 1,
+          "ProductName": "Ayva5",
+          "UnitsInStock": 55,
+          "UnitPrice": 15.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 17:23:40",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "product",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 1,
+          "ProductName": "Ayva5",
+          "UnitsInStock": 55,
+          "UnitPrice": 15.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 17:23:40",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "product",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 1,
+          "ProductName": "Ayva5",
+          "UnitsInStock": 55,
+          "UnitPrice": 15.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 17:23:47",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "product",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 1,
+          "ProductName": "Ayva5",
+          "UnitsInStock": 55,
+          "UnitPrice": 15.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 17:47:14",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 17:49:24",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 18:16:22",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 18:18:18",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 18:39:42",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 19:13:25",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "product",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 12,
+          "ProductName": "Ayva4",
+          "UnitsInStock": 12,
+          "UnitPrice": 12.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 19:13:28",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "product",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 12,
+          "ProductName": "Ayva4",
+          "UnitsInStock": 12,
+          "UnitPrice": 12.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 19:13:31",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "product",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 12,
+          "ProductName": "Ayva4",
+          "UnitsInStock": 12,
+          "UnitPrice": 12.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 19:13:35",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "product",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 12,
+          "ProductName": "Ayva4",
+          "UnitsInStock": 12,
+          "UnitPrice": 12.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 19:13:43",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "product",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 12,
+          "ProductName": "Ayva4",
+          "UnitsInStock": 12,
+          "UnitPrice": 12.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 19:13:48",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "product",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 12,
+          "ProductName": "Ayva4",
+          "UnitsInStock": 12,
+          "UnitPrice": 12.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 19:13:54",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "product",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 12,
+          "ProductName": "Ayva4",
+          "UnitsInStock": 12,
+          "UnitPrice": 12.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 19:13:58",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "product",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 12,
+          "ProductName": "Ayva4",
+          "UnitsInStock": 12,
+          "UnitPrice": 12.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 20:10:50",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 20:25:24",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 20:46:00",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 21:05:30",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 22:33:29",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 22:59:13",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 22:59:14",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 23:06:08",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 23:06:45",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 23:09:14",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "1"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 23:09:37",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "1"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 23:15:14",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 23:16:26",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 23:17:42",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 23:17:45",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 23:17:45",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 23:17:47",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 23:17:48",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 23:17:49",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 23:17:49",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 23:41:17",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 23:53:16",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "16.06.2023 23:55:17",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 00:00:23",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 00:02:55",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 00:23:20",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 00:27:57",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "ExceptionMessage": "IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS512', the key size must be greater than: '512' bits, key has '224' bits. (Parameter 'keyBytes')",
+    "Date": null,
+    "MethodName": "CreateAccessToken",
+    "LogParameters": [
+      {
+        "Name": "user",
+        "Value": {
+          "Id": 1,
+          "FirstName": "Ahmed Hakan",
+          "LastName": "Okumus",
+          "Email": "ahmed@ahmed.com",
+          "PasswordSalt": "IzIT8zIKZ7fFQr/9yRYuOZFxvIayDNNA39SZOOITXNr/x1p973jrIIhSLgPfMOafonk66Y2cOs2z1p4iRpMGW/9FMiFp3xKXbqWaraRgdxKkEy/jQCPBrggihnG3cunbHyefYl8h8M8yzI6amiSfAyHwvtskuUkuSIpnmcjoxTc=",
+          "PasswordHash": "RSTF+HCDJOmMhI8UI+rKLqANF1e/Zdl3IXfqrCd9RI1GfwLa1kh9CkQWVX285GTaxB7rtPoJNbwEBiKKFt8pIQ==",
+          "Status": true
+        },
+        "Type": "User"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 00:38:33",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "ExceptionMessage": "IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS512', the key size must be greater than: '512' bits, key has '224' bits. (Parameter 'keyBytes')",
+    "Date": null,
+    "MethodName": "CreateAccessToken",
+    "LogParameters": [
+      {
+        "Name": "user",
+        "Value": {
+          "Id": 1,
+          "FirstName": "Ahmed Hakan",
+          "LastName": "Okumus",
+          "Email": "ahmed@ahmed.com",
+          "PasswordSalt": "IzIT8zIKZ7fFQr/9yRYuOZFxvIayDNNA39SZOOITXNr/x1p973jrIIhSLgPfMOafonk66Y2cOs2z1p4iRpMGW/9FMiFp3xKXbqWaraRgdxKkEy/jQCPBrggihnG3cunbHyefYl8h8M8yzI6amiSfAyHwvtskuUkuSIpnmcjoxTc=",
+          "PasswordHash": "RSTF+HCDJOmMhI8UI+rKLqANF1e/Zdl3IXfqrCd9RI1GfwLa1kh9CkQWVX285GTaxB7rtPoJNbwEBiKKFt8pIQ==",
+          "Status": true
+        },
+        "Type": "User"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 00:39:11",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 00:40:10",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}

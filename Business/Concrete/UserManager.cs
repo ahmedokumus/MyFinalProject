@@ -6,7 +6,7 @@ namespace Business.Concrete;
 
 public class UserManager : IUserService
 {
-    IUserDal _userDal;
+    readonly IUserDal _userDal;
 
     public UserManager(IUserDal userDal)
     {
@@ -23,7 +23,7 @@ public class UserManager : IUserService
         _userDal.Add(user);
     }
 
-    public User GetByMail(string email)
+    public User? GetByMail(string email)
     {
         return _userDal.Get(u => u.Email == email);
     }

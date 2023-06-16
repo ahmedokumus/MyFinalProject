@@ -6,11 +6,6 @@ public static class ClaimsPrincipalExtensions
 {
     public static List<string>? Claims(this ClaimsPrincipal claimsPrincipal, string claimType)
     {
-        foreach (var claim in claimsPrincipal.Claims)
-        {
-            var type = claim.Type;
-            var value = claim.Value;
-        }
         var result = claimsPrincipal?.FindAll(claimType)?.Select(x => x.Value).ToList();
         return result;
     }

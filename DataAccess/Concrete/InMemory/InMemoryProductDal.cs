@@ -7,7 +7,7 @@ namespace DataAccess.Concrete.InMemory;
 
 public class InMemoryProductDal : IProductDal
 {
-    private List<Product> _products;
+    private readonly List<Product> _products;
     public InMemoryProductDal()
     {
         //Oracle, Sql Server, Postgres, MongoDb
@@ -26,7 +26,7 @@ public class InMemoryProductDal : IProductDal
         return _products;
     }
 
-    public List<Product> GetAll(Expression<Func<Product, bool>> filter = null)
+    public List<Product> GetAll(Expression<Func<Product, bool>>? filter = null)
     {
         throw new NotImplementedException();
     }
@@ -44,7 +44,7 @@ public class InMemoryProductDal : IProductDal
     public void Update(Product product)
     {
         //Gönderdiğim ürün id'sine sahip olan listedeki ürünü bul demek
-        Product productToUpdate = _products.SingleOrDefault(p => p.ProductId == product.ProductId);
+        Product productToUpdate = _products.SingleOrDefault(p => p.ProductId == product.ProductId)!;
         productToUpdate.ProductName = product.ProductName;
         productToUpdate.CategoryId = product.CategoryId;
         productToUpdate.UnitPrice = product.UnitPrice;
@@ -55,8 +55,8 @@ public class InMemoryProductDal : IProductDal
     {
         //LINQ - Language Integrated Query
         //Lambda
-        Product productToDelete = _products.SingleOrDefault(p => p.ProductId == product.ProductId);
-        _products.Remove(productToDelete);
+        Product productToDelete = _products.SingleOrDefault(p => p.ProductId == product.ProductId)!;
+        _products.Remove(productToDelete!);
     }
 
     public List<ProductDetailDto> GetProductDetails()
