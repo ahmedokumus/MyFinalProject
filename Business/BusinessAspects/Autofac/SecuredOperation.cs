@@ -30,6 +30,6 @@ public class SecuredOperation : MethodInterception
                 return;
             }
         }
-        throw new Exception(Messages.AuthorizationDenied);
+        throw new UnauthorizedException(Messages.AuthorizationDenied!);
     }
 }

@@ -28,7 +28,6 @@ public class ProductManager : IProductService
         _categoryService = categoryService;
     }
 
-    [SecuredOperation("product.add,admin")]
     [CacheAspect] //key, value
     [PerformanceAspect(1)]//Methodun çalışması 1 saniyeden uzun sürerse beni bilgilendir
     [LogAspect(typeof(FileLogger))]
@@ -50,6 +49,7 @@ public class ProductManager : IProductService
         return new SuccessDataResult<Product?>(_productDal.Get(p => p.ProductId == productId));
     }
 
+    [SecuredOperation("product.add,admin")]
     public IDataResult<List<Product>> GetAllByCategoryId(int categoryId)
     {
         return new SuccessDataResult<List<Product>>(_productDal.GetAll(p => p.CategoryId == categoryId));

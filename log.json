@@ -1222,3 +1222,266 @@
     "LogParameters": []
   }
 }
+{
+  "Message": {
+    "Date": "17.06.2023 01:28:20",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 01:28:28",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 01:30:23",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "product",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 7,
+          "ProductName": "Ayva",
+          "UnitsInStock": 55,
+          "UnitPrice": 15.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 01:30:33",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "product",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 7,
+          "ProductName": "Ayva4",
+          "UnitsInStock": 55,
+          "UnitPrice": 15.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 01:30:37",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "product",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 7,
+          "ProductName": "Ayva46",
+          "UnitsInStock": 55,
+          "UnitPrice": 15.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 01:35:54",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 01:41:23",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 01:45:41",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 13:21:09",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 13:21:47",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 13:22:22",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 16:56:04",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 17:47:08",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 18:15:11",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 18:36:13",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 19:28:24",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 19:35:20",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
