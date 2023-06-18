@@ -1485,3 +1485,112 @@
     ]
   }
 }
+{
+  "Message": {
+    "Date": "17.06.2023 19:58:16",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 19:59:35",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "product",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 1,
+          "ProductName": "v",
+          "UnitsInStock": 21,
+          "UnitPrice": 1.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 20:25:56",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 22:30:45",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 23:14:42",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 23:14:43",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 23:15:41",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 23:23:28",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 23:48:44",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "17.06.2023 23:51:40",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}

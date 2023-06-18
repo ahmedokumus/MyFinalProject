@@ -3,6 +3,7 @@ using Autofac.Extensions.DependencyInjection;
 using Business.DependencyResolvers.Autofac;
 using Core.DependencyResolvers;
 using Core.Extensions;
+using Core.Extensions.ExceptionExtension;
 using Core.Utilities.IoC;
 using Core.Utilities.Security.Encryption;
 using Core.Utilities.Security.JWT;

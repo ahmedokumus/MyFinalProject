@@ -2,9 +2,9 @@
 using System.Net;
 using FluentValidation;
 using FluentValidation.Results;
-using System;
+using Core.Extensions.ExceptionExtension.Model;
 
-namespace Core.Extensions;
+namespace Core.Extensions.ExceptionExtension;
 
 public class ExceptionMiddleware
 {
@@ -45,7 +45,7 @@ public class ExceptionMiddleware
                 {
                     StatusCode = 400,
                     Message = message,
-                    validationErrors = errors
+                    ValidationErrors = errors
                 }.ToString());
 
             case UnauthorizedException:
@@ -55,7 +55,7 @@ public class ExceptionMiddleware
                 return httpContext.Response.WriteAsync(new UnauthorizedErrorDetails
                 {
                     StatusCode = 401,
-                    Message = message,
+                    UnauthorizedError = message,
                 }.ToString());
 
             default:
@@ -66,5 +66,37 @@ public class ExceptionMiddleware
                     Message = message
                 }.ToString());
         }
+
+        //if (e.GetType() == typeof(UnauthorizedException))
+        //{
+        //    message = e.Message;
+        //    httpContext.Response.StatusCode = 401;
+
+        //    return httpContext.Response.WriteAsync(new UnauthorizedErrorDetails
+        //    {
+        //        StatusCode = 401,
+        //        Message = message,
+        //    }.ToString());
+        //}
+
+        //if (e.GetType() == typeof(ValidationException))
+        //{
+        //    message = e.Message;
+        //    IEnumerable<ValidationFailure> errors = ((ValidationException)e).Errors;
+        //    httpContext.Response.StatusCode = 400;
+
+        //    return httpContext.Response.WriteAsync(new ValidationErrorDetails
+        //    {
+        //        StatusCode = 400,
+        //        Message = message,
+        //        validationErrors = errors
+        //    }.ToString());
+        //}
+
+        //return httpContext.Response.WriteAsync(new ErrorDetails
+        //{
+        //    StatusCode = httpContext.Response.StatusCode,
+        //    Message = message
+        //}.ToString());
     }
 }
