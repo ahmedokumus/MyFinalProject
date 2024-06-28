@@ -1594,3 +1594,312 @@
     "LogParameters": []
   }
 }
+{
+  "Message": {
+    "Date": "18.06.2023 21:14:47",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "18.06.2023 21:16:29",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "entity",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 1,
+          "ProductName": "Ayva4",
+          "UnitsInStock": 1,
+          "UnitPrice": 10.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "18.06.2023 21:17:36",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "entity",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 1,
+          "ProductName": "Ayva4",
+          "UnitsInStock": 1,
+          "UnitPrice": 10.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "19.06.2023 01:29:21",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "19.06.2023 01:29:36",
+    "MethodName": "Add",
+    "LogParameters": [
+      {
+        "Name": "entity",
+        "Value": {
+          "ProductId": 0,
+          "CategoryId": 1,
+          "ProductName": "Ayva4",
+          "UnitsInStock": 1,
+          "UnitPrice": 10.0
+        },
+        "Type": "Product"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "03.08.2023 22:35:41",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "03.08.2023 22:42:46",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "123"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "03.08.2023 22:43:03",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "ahmed@ahmed.com",
+          "Password": "12345678"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "13.09.2023 23:32:04",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "13.09.2023 23:35:37",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "13.09.2023 23:36:35",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "13.10.2023 12:23:01",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "13.10.2023 12:29:49",
+    "MethodName": "Register",
+    "LogParameters": [
+      {
+        "Name": "userForRegisterDto",
+        "Value": {
+          "Email": "test@mail.com",
+          "Password": "123456",
+          "FirstName": "test",
+          "LastName": "test"
+        },
+        "Type": "UserForRegisterDto"
+      },
+      {
+        "Name": "password",
+        "Value": "123456",
+        "Type": "String"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "13.10.2023 12:33:47",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "test@mail.com",
+          "Password": "123456"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "13.10.2023 12:34:41",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "test@mail.com",
+          "Password": "1"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "13.10.2023 12:34:59",
+    "MethodName": "Login",
+    "LogParameters": [
+      {
+        "Name": "userForLoginDto",
+        "Value": {
+          "Email": "test@mail.com",
+          "Password": "123456"
+        },
+        "Type": "UserForLoginDto"
+      }
+    ]
+  }
+}
+{
+  "Message": {
+    "Date": "21.03.2024 10:09:38",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "21.03.2024 10:12:28",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "ExceptionMessage": "A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - Sertifika zinciri güvenilmeyen bir yetkili tarafýndan verildi.)",
+    "Date": null,
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "21.03.2024 10:14:19",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "ExceptionMessage": "A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - Sertifika zinciri güvenilmeyen bir yetkili tarafýndan verildi.)",
+    "Date": null,
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "21.03.2024 10:16:16",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "ExceptionMessage": "An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.",
+    "Date": null,
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "21.03.2024 10:21:57",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "ExceptionMessage": "An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.",
+    "Date": null,
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "21.03.2024 10:29:13",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "ExceptionMessage": "An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure' to the 'UseSqlServer' call.",
+    "Date": null,
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}

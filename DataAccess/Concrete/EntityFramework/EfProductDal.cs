@@ -20,7 +20,7 @@ public class EfProductDal : EfEntityRepositoryBase<Product, NorthwindContext>, I
                 ProductName = product.ProductName,
                 CategoryName = category.CategoryName,
                 UnitsInStock = product.UnitsInStock,
-                UnitPrice=product.UnitPrice
+                UnitPrice = product.UnitPrice
             };
 
         return result.ToList();

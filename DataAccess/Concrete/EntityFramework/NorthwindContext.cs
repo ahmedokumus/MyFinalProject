@@ -6,10 +6,10 @@ namespace DataAccess.Concrete.EntityFramework;
 // Context : Db tabloları ile proje classlarını ilişkilendirmek
 public class NorthwindContext : DbContext
 {
-    private readonly string conString = @"Server=(localdb)\MSSQLLocalDB;Database=Northwind;Trusted_Connection=true";
+    private readonly string _conString = @"Server=AHAKANOKUMUS; Database=Northwind; TrustServerCertificate=True";
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer(connectionString:conString);
+        optionsBuilder.UseSqlServer(_conString);
     }
     public DbSet<Product> Products { get; set; }
     public DbSet<Category> Categories { get; set; }

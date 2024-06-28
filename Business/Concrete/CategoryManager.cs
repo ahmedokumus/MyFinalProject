@@ -23,4 +23,25 @@ public class CategoryManager : ICategoryService
     {
         return new SuccessDataResult<Category?>(_categoryDal.Get(c => c.CategoryId == categoryId));
     }
+
+    public IResult Add(Category category)
+    {
+        _categoryDal.Add(category);
+
+        return new SuccessResult();
+    }
+
+    public IResult Update(Category category)
+    {
+        _categoryDal.Update(category);
+
+        return new SuccessResult();
+    }
+
+    public IResult Delete(Category category)
+    {
+        _categoryDal.Delete(category);
+
+        return new SuccessResult();
+    }
 }

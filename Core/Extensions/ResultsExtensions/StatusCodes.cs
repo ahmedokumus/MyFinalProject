@@ -1,0 +1,72 @@
+﻿namespace Core.Extensions.ResultsExtensions;
+
+public enum StatusCodes
+{
+    True = 1,
+    False = 0,
+
+    Continue = 100, //Devam
+    SwitchingProtocols = 101, //Anahtarlama Protokolü
+    Processing = 102, //WebDAV : işlem
+    OK = 200, //Tamam
+    Created = 201, //Oluşturuldu
+    Accepted = 202, //Onaylandı
+    NonAuthoritative = 203, //Yetersiz Bilgi
+    NoContent = 204, //İçerik yok
+    ResetContent = 205, //İçeriği baştan al
+    PartialContent = 206, //Kısmi içerik
+    MultiStatus = 207, //WebDAV : Çok Statü
+    AlreadyReported = 208, //WebDAV : Farklı içerik
+    MultipleChoices = 300, //Çok seçenek
+    MovedPermanently = 301, //Kalıcı taşındı
+    MovedTemporarily = 302, //Geçici Taşındı
+    SeeOther = 303, //Diğerlerine bak
+    NotModified = 304, //Güncellenmedi
+    UseProxy = 305, //Proxy kullan
+    SwitchProxy = 306,  // RFC 2616, removed
+    TemporaryRedirect = 307, //Geçici olarak yeniden gönder
+    PermanentRedirect = 308, //Kalıcı olarak yeniden gönder
+    BadRequest = 400, //Kötü İstek
+    Unauthorized = 401, //Yetkisiz
+    PaymentRequired = 402, //Ödeme Gerekli
+    Forbidden = 403, //Yasaklandı
+    NotFound = 404, //Sayfa bulunamadı
+    MethodNotAllowed = 405, //İzin verilmeyen Metod
+    NotAcceptable = 406, //Kabul Edilemez
+    ProxyAuthenticationRequired = 407, //Proxy Sunucusuna giriş yapmak gerekli
+    RequestTimeout = 408, //İstek zaman aşamına uğradı
+    Conflict = 409, //Çakıştı,Çakışma
+    Gone = 410, //Bak
+    LengthRequired = 411,
+    PreconditionFailed = 412,
+    RequestEntityTooLarge = 413,  // RFC 2616, renamed
+    PayloadTooLarge = 413,  // RFC 7231
+    RequestUriTooLong = 414,  // RFC 2616, renamed
+    UriTooLong = 414,  // RFC 7231 //Desteklenmeyen medya türü
+    UnsupportedMediaType = 415,
+    RequestedRangeNotSatisfiable = 416,  // RFC 2616, renamed
+    RangeNotSatisfiable = 416,  // RFC 7233
+    ExpectationFailed = 417,
+    ImATeapot = 418,
+    AuthenticationTimeout = 419,  // Not defined in any RFC
+    MisdirectedRequest = 421,
+    UnprocessableEntity = 422,
+    Locked = 423, //Kilitlendi
+    FailedDependency = 424,
+    UpgradeRequired = 426,
+    PreconditionRequired = 428,
+    TooManyRequests = 429,
+    RequestHeaderFieldsTooLarge = 431,
+    UnavailableForLegalReasons = 451, //Yasal nedenlerle gösterilemiyor
+    InternalServerError = 500,
+    NotImplemented = 501,
+    BadGateway = 502,
+    ServiceUnavailable = 503,
+    GatewayTimeout = 504,
+    HttpVersionNotsupported = 505, //HTTP versiyonu desteklenmiyor
+    VariantAlsoNegotiates = 506,
+    InsufficientStorage = 507,
+    LoopDetected = 508, //DöngüAlgılandı
+    NotExtended = 510, //Uzatılmadı
+    NetworkAuthenticationRequired = 511 //Ağ kimlik doğrulaması Gerekli
+}

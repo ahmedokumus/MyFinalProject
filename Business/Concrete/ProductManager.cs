@@ -35,7 +35,7 @@ public class ProductManager : IProductService
     public IDataResult<List<Product>> GetAll()
     {
         //İş Kodları
-        if (DateTime.Now.Hour == 11)
+        if (DateTime.Now.Hour == 23)
         {
             return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime);
         }
@@ -76,7 +76,7 @@ public class ProductManager : IProductService
     [LogAspect(typeof(DatabaseLogger))]
     public IResult Add(Product product)
     {
-        IResult result = BusinessRules.Run(logics: new[]
+        var result = BusinessRules.Run(logics: new[]
         {
             CheckIfProductCountOfCategoryCorrect(product.CategoryId),
             CheckIfProductNameExists(product.ProductName),
@@ -123,7 +123,7 @@ public class ProductManager : IProductService
         return null!;
     }
 
-    //*****  İŞ KODLARI  *****\\
+                                                //**********       İŞ KODLARI       **********\\
 
     private IResult CheckIfProductCountOfCategoryCorrect(int categoryId)
     {
