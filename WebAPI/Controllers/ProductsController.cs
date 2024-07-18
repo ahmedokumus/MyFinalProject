@@ -1,5 +1,6 @@
 ﻿ using Business.Abstract;
-using Entities.Concrete;
+ using Core.Aspects.Autofac.Performance;
+ using Entities.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers
@@ -19,6 +20,7 @@ namespace WebAPI.Controllers
             _productService = productService;
         }
 
+        [PerformanceAspect(5)]
         [HttpGet(template:"getall")]
         public IActionResult GetAll()
         {

@@ -30,6 +30,7 @@ public class AutofacBusinessModule : Module
         builder.RegisterType<AuthManager>().As<IAuthService>().SingleInstance();
         builder.RegisterType<JwtHelper>().As<ITokenHelper>().SingleInstance();
 
+        //AOP için gerekli kod bloğu
         var assembly = Assembly.GetExecutingAssembly();
         builder.RegisterAssemblyTypes(assembly).AsImplementedInterfaces()
             .EnableInterfaceInterceptors(new ProxyGenerationOptions()

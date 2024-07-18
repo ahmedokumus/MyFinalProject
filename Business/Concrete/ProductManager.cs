@@ -29,7 +29,7 @@ public class ProductManager : IProductService
     }
 
     [CacheAspect] //key, value
-    [PerformanceAspect(1)]//Methodun çalışması 1 saniyeden uzun sürerse beni bilgilendir
+    [PerformanceAspect(2)]//Methodun çalışması 1 saniyeden uzun sürerse beni bilgilendir
     [LogAspect(typeof(FileLogger))]
     [LogAspect(typeof(DatabaseLogger))]
     public IDataResult<List<Product>> GetAll()
@@ -70,7 +70,7 @@ public class ProductManager : IProductService
         return new SuccessDataResult<List<ProductDetailDto>>(_productDal.GetProductDetails());
     }
 
-    [SecuredOperation("product.add,admin")]
+    //[SecuredOperation("product.add,admin")]
     [ValidationAspect(typeof(ProductValidator))] // validation - doğrulama
     [LogAspect(typeof(FileLogger))]
     [LogAspect(typeof(DatabaseLogger))]
