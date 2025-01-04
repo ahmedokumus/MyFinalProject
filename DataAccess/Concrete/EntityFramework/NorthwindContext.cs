@@ -6,7 +6,7 @@ namespace DataAccess.Concrete.EntityFramework;
 // Context : Db tabloları ile proje classlarını ilişkilendirmek
 public class NorthwindContext : DbContext
 {
-    private readonly string _conString = @"Server=AHAKANOKUMUS; Database=Northwind; TrustServerCertificate=True";
+    private readonly string _conString = "Server=AHAKANOKUMUS; Database=Northwind; Trusted_Connection=false; TrustServerCertificate=True";
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseSqlServer(_conString);

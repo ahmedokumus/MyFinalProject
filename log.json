@@ -1903,3 +1903,24 @@
     "LogParameters": []
   }
 }
+{
+  "Message": {
+    "Date": "12.08.2024 16:52:47",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "12.08.2024 16:54:42",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
+{
+  "Message": {
+    "Date": "12.08.2024 16:56:43",
+    "MethodName": "GetAll",
+    "LogParameters": []
+  }
+}
